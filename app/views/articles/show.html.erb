@@ -1,5 +1,8 @@
-<div class="container">
-  <h1><%= @article.title %></h1>
-    <%= image_tag(@article.image, class:"w-100") %>
-  <p><%= @article.description %></p>
+<div class="yellow-background">
+
+  <div class="container">
+    <h1 class="text-center"><%= @article.title %></h1>
+      <%= image_tag(@article.image, class:"show-image center my-5") %>
+    <p style="text-align: justify;"><%= @article.description %></p>
+  </div>
 </div>

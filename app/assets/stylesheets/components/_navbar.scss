@@ -1,7 +1,43 @@
 .nav-item {
-  padding: 0 60px
+  padding: 0 140px;
+  :hover {
+    text-decoration: none;
+  }
 }
 
 .banner-header {
   padding: 28px;
+  background-color: $light-yellow;
+}
+
+.navbar {
+  background-color: $light-yellow !important;
+}
+
+.banner-header {
+  margin: 0;
+}
+
+.yellow-background {
+  background-color: $light-yellow;
+}
+
+.search-button {
+  background-color: #F85A3E;
+  border-bottom-style: none;
+  border-radius: 4px;
+  opacity: 50%;
+  color: white !important;
+}
+
+.search-input {
+  background-color: #F85A3E;
+  border-bottom-style: none;
+  border-radius: 4px;
+  opacity: 50%;
+  color: white !important;
+}
+
+.orange-border-bottom {
+  border-bottom: 1px solid $orange;
 }

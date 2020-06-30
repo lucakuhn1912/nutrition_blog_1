@@ -1,6 +1,13 @@
-<h1>Articles#index</h1>
-<%= @articles.each do |article| %>
-  <%= article.title %>
-  <%= article.description %>
-<% end %>
-<p>Find me in app/views/articles/index.html.erb</p>
+<div class="yellow-background">
+  <div class="container">
+    <div class="cards">
+      <%= @articles.each do |article| %>
+        <div>
+          <%= image_tag(article.image, class:"card-category image-height") %>
+          <%= article.title %>
+        </div>
+        <% end %>
+    </div>
+    <%= link_to 'About', about_path %>
+  </div>
+</div>
