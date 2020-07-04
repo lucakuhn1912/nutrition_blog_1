@@ -2,12 +2,23 @@
   padding: 0 140px;
   :hover {
     text-decoration: none;
+    font-size: bold;
+  }
+  font-family: $headers-font;
+  a {
+    color: black;
+    opacity: 70%;
   }
 }
 
 .banner-header {
   padding: 28px;
   background-color: $light-yellow;
+}
+
+.form-control {
+  border-radius: 8px !important;
+  font-style: $headers-font !important;
 }
 
 .navbar {
@@ -38,6 +49,13 @@
   color: white !important;
 }
 
+
 .orange-border-bottom {
-  border-bottom: 1px solid $orange;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  background-color: $light-yellow !important;
+}
+
+body {
+  background-color: $light-yellow !important;
 }

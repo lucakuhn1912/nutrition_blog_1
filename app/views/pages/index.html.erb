@@ -3,8 +3,12 @@
     <div class="cards">
       <%= @articles.each do |article| %>
         <div>
-          <%= image_tag(article.image, class:"card-category") %>
-          <%= article.title %>
+          <%= image_tag(article.image, class:"card-category center-image") %>
+          <h2>
+            <%= article.title %>
+          </h2>
+          <p class="limit-text"><%= article.description %></p>
+
         </div>
         <% end %>
     </div>

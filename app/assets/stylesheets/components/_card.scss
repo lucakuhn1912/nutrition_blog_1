@@ -4,7 +4,9 @@
   background-position: center;
   width: 300px;
   object-fit: cover;
-  display: flex;
+  height: 200px;
+  display: block;
+  margin: 0 auto !important;
   justify-content: center;
   align-items: center;
   color: white;
@@ -15,11 +17,21 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.limit-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
+
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

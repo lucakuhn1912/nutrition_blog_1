@@ -2,11 +2,15 @@
   <%= link_to "LNB", root_path, class: "navbar-brand", id: "logo" %>
   <div class="search form-inline">
     <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2" %>
-      <%= submit_tag "Search", :name => nil, class: "btn btn-outline-success my-2 my-sm-0" %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2 rounded" %>
     <% end %>
   </div>
 </nav>
 
 
 
+
+ <!--  <div class="my-links">
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-instagram-square"></i>
+  </div> -->
