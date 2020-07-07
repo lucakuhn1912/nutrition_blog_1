@@ -25,8 +25,19 @@
   font-style: $headers-font !important;
 }
 
+// select.form-control {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   padding: 6px 12px;
+// }
+
 .navbar {
   background-color: $light-yellow !important;
+}
+
+.navbar-brand {
+  font-family: $headers-font;
 }
 
 .banner-header {
@@ -53,6 +64,9 @@
   color: white !important;
 }
 
+.search {
+  background-color: transparent;
+}
 
 .orange-border-bottom {
   border-bottom: 1px solid black;

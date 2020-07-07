@@ -1,8 +1,8 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
-  <%= link_to "LNB", root_path, class: "navbar-brand", id: "logo" %>
+  <%= link_to "lnb", root_path, class: "navbar-brand", id: "logo" %>
   <div class="search form-inline">
     <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2 rounded" %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control form-control2" %>
     <% end %>
   </div>
 </nav>
