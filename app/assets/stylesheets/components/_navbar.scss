@@ -1,10 +1,10 @@
 .nav-item {
-  padding: 0 140px;
-  font-size: 24px;
+  padding: 0px 80px;
+  font-size: 16px;
   font-family: $headers-font;
   a {
-    color: black;
-    opacity: 50%;
+    color: $red;
+    opacity: 70%;
   }
   :hover {
     text-decoration: none;
@@ -15,9 +15,45 @@
   }
 }
 
+#wave {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background: $red;
+}
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 80px;
+  background-color: $light-red;
+  right: -5px;
+  top: 40px;
+}
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 70px;
+  background-color: $red;
+  left: 0;
+  top: 27px;
+}
+
+.white-nav {
+  background-color: white !important;
+  margin: auto;
+  width: 50%;
+}
+
 .banner-header {
   padding: 28px;
-  background-color: $light-yellow;
+  color: white;
+  font-weight: lighter;
 }
 
 .form-control {
@@ -33,11 +69,12 @@
 // }
 
 .navbar {
-  background-color: $light-yellow !important;
+  background-color: $red;
 }
 
 .navbar-brand {
   font-family: $headers-font;
+  color: white !important;
 }
 
 .banner-header {
@@ -48,12 +85,19 @@
   background-color: $light-yellow;
 }
 
+.red-background {
+  background-color: $red !important;
+}
 .search-button {
   background-color: #F85A3E;
   border-bottom-style: none;
   border-radius: 4px;
   opacity: 50%;
   color: white !important;
+}
+
+.light-red-background {
+  background-color: $light-red;
 }
 
 .search-input {
@@ -68,12 +112,7 @@
   background-color: transparent;
 }
 
-.orange-border-bottom {
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-  background-color: $light-yellow !important;
-}
 
 body {
-  background-color: $light-yellow !important;
+  background-color: $light-red !important;
 }

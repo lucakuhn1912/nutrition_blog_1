@@ -1,8 +1,7 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sacramento&display=swap');
-// Define fonts for body and headers
-$body-font: 'Roboto', sans-serif;
-$headers-font: 'Sacramento', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300&display=swap');// Define fonts for body and headers
+$body-font: 'Source Sans Pro', sans-serif;
+$headers-font: 'Merriweather', serif;
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
@@ -12,4 +11,3 @@ $headers-font: 'Sacramento', cursive;
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-

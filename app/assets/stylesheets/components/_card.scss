@@ -13,8 +13,7 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .limit-text {
@@ -31,11 +30,16 @@
   grid-gap: 16px;
 }
 
+.padding-top-20 {
+  padding-top: 20px;
+}
+
 .each-card {
   margin: 0 30px;
   h2 {
     margin-bottom: 0;
     margin-top: 8px;
+    font-size: 20px;
   }
 }
 
