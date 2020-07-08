@@ -1,34 +1,16 @@
 <div class="padding-top-20 light-red-background">
   <div class="container">
     <div class="cards">
-      <%= @articles.each do |article| %>
+      <% @articles.each do |article| %>
         <div class="each-card">
           <%= image_tag(article.image, class:"card-category center-image") %>
-          <h2>
-            <%= article.title %>
-          </h2>
+          <h2><%= article.title %></h2>
           <p class="limit-text"><%= article.description %></p>
-
         </div>
-        <% end %>
+      <% end %>
     </div>
     <%= link_to 'new', new_article_path %>
   </div>
 </div>
 
 
-<!-- HTML
-CSS
-<div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-    Breakfast
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-    Lunch
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Dinner
-  </div>
-</div> -->

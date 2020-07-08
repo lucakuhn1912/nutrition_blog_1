@@ -2,7 +2,9 @@
 
   <div class="container">
     <h1 class="text-center"><%= @article.title %></h1>
+    <p><%= @article.created_at %></p>
       <%= image_tag(@article.image, class:"show-image center my-5") %>
     <p style="text-align: justify;"><%= @article.description %></p>
+    <p>X Luca</p>
   </div>
 </div>

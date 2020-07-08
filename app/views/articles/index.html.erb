@@ -1,16 +1,16 @@
-<div class="light-red-background">
+<div class="padding-top-20 light-red-background">
   <div class="container">
     <div class="cards">
-      <%= @articles.each do |article| %>
+      <% @articles.each do |article| %>
         <div class="each-card">
           <%= image_tag(article.image, class:"card-category center-image") %>
-          <h2>
-            <%= article.title %>
-          </h2>
+          <h2><%= article.title %></h2>
           <p class="limit-text"><%= article.description %></p>
-
         </div>
-        <% end %>
+      <% end %>
     </div>
+    <%= link_to 'new', new_article_path %>
   </div>
 </div>
+
+
