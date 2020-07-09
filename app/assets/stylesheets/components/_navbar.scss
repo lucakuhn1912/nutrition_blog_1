@@ -44,6 +44,36 @@
   top: 27px;
 }
 
+#wave2 {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background: $light-red;
+}
+#wave2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 80px;
+  background-color: $red;
+  right: -5px;
+  top: 40px;
+}
+#wave2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 70px;
+  background-color: $light-red;
+  left: 0;
+  top: 27px;
+}
+
+
 .white-nav {
   background-color: white !important;
   margin: auto;
