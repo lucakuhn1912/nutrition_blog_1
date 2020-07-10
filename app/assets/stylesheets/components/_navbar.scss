@@ -1,6 +1,6 @@
 .nav-item {
   padding: 0px 80px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: $headers-font;
   a {
     color: $red;
@@ -80,11 +80,6 @@
   width: 50%;
 }
 
-.banner-header {
-  padding: 28px;
-  color: white;
-  font-weight: lighter;
-}
 
 .form-control {
   border-radius: 8px !important;
@@ -145,4 +140,31 @@
 
 body {
   background-color: $light-red !important;
+}
+
+.lines {
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+
+.banner-header {
+  color: white;
+  font-weight: lighter;
+}
+
+#word1 {
+  font-size: 50px;
+  position: absolute;
+  left: 400px;
+
+}
+
+#word2 {
+  font-size: 50px;
+  right: 450px;
+  top: 40px;
+}
+
+#word-placement {
+  position: relative;
 }
