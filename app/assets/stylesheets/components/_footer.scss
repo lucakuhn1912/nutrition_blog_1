@@ -2,4 +2,16 @@
   background-color: $red;
   color: white;
   height: 200px;
+  ul li{
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+  a {
+    color: white;
+    }
+  :hover {
+    color: black;
+    }
+  }
 }
+

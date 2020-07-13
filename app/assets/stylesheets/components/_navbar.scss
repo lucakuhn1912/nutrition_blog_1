@@ -100,6 +100,9 @@
 .navbar-brand {
   font-family: $headers-font;
   color: white !important;
+  :hover {
+    color: black !important;
+  }
 }
 
 .banner-header {
@@ -163,5 +166,4 @@ body {
 #word-placement {
   position: relative;
 }
-
 
