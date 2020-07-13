@@ -1,2 +1,15 @@
-<h1>Articles#edit</h1>
-<p>Find me in app/views/articles/edit.html.erb</p>
+<div class="light-red-background">
+
+  <div class="container">
+
+    <h1>Add a blog entry</h1>
+    <%= simple_form_for @article do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :category %>
+    <%= f.input :image, as: :file %>
+    <%= f.button :submit, class: "btn-primary" %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+    <% end %>
+  </div>
+</div>
