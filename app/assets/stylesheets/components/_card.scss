@@ -16,6 +16,19 @@
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.card-date {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.card-head {
+  margin: 5px 0;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
 .limit-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -38,7 +51,6 @@
   margin: 0 30px;
   h2 {
     margin-bottom: 0;
-    margin-top: 8px;
     font-size: 20px;
   }
   :hover {
