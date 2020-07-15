@@ -3,13 +3,16 @@
     <div class="cards">
       <% @articles.each do |article| %>
         <div class="each-card">
-          <%= image_tag(article.image, class:"card-category center-image") %>
-          <h2><%= article.title %></h2>
-          <p class="limit-text"><%= article.description %></p>
+          <%= link_to article_path(article) do %>
+            <%= image_tag(article.image, class:"card-category center-image") %>
+            <p class="card-date"><%= article.created_at.strftime("%d.%m.%y") %></p>
+            <h2 class="card-head"><%= article.title %></h2>
+            <p class="card-text limit-text"><%= article.description %></p>
+          <% end %>
         </div>
       <% end %>
     </div>
-    <%= link_to 'new', new_article_path %>
+    <% link_to 'new', new_article_path %>
   </div>
 </div>
 

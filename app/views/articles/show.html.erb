@@ -2,12 +2,16 @@
 
   <div class="container">
     <h1 class="text-center" style="margin-top: 24px; font-size:28px;"><%= @article.title %></h1>
-    <p class="text-center" style="font-size:12px;"><%= @article.created_at.strftime("%b %d, %Y") %></p>
+    <p class="text-center" style="font-size:12px; opacity: 70%;"><%= @article.created_at.strftime("%b %d, %Y") %></p>
       <%= image_tag(@article.image, class:"show-image center") %>
-    <p style="text-align: justify; margin-top: 20px;"><%= @article.description %></p>
-    <p style="text-align: justify;"><%= @article.description1 %></p>
-    <p style="text-align: justify;"><%= @article.description2 %></p>
-    <p style="text-align: justify;"><%= @article.description3 %></p>
-    <p>X Luca</p>
+      <div class="show-text">
+        <p style="text-align: justify; margin-top: 20px;"><%= @article.description %></p>
+        <p style="text-align: justify;"><%= @article.description1 %></p>
+        <p style="text-align: justify;"><%= @article.description2 %></p>
+        <p style="text-align: justify;"><%= @article.description3 %></p>
+        <p>X Luca</p>
+        <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
+
+      </div>
   </div>
 </div>
