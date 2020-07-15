@@ -4,7 +4,7 @@
       <% @articles.each do |article| %>
         <div class="each-card">
           <%= link_to article_path(article) do %>
-            <%= image_tag(article.image, class:"card-category center-image") %>
+            <%= cl_image_tag(article.image.key, class:"card-category center-image") %>
             <p class="card-date"><%= article.created_at.strftime("%d.%m.%y") %></p>
             <h2 class="card-head"><%= article.title %></h2>
             <p class="card-text limit-text"><%= article.description %></p>

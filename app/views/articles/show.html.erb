@@ -3,7 +3,7 @@
   <div class="container">
     <h1 class="text-center" style="margin-top: 24px; font-size:28px;"><%= @article.title %></h1>
     <p class="text-center" style="font-size:12px; opacity: 70%;"><%= @article.created_at.strftime("%b %d, %Y") %></p>
-      <%= image_tag(@article.image, class:"show-image center") %>
+      <%= cl_image_tag(@article.image.key, class:"show-image center") %>
       <div class="show-text">
         <p style="text-align: justify; margin-top: 20px;"><%= @article.description %></p>
         <p style="text-align: justify;"><%= @article.description1 %></p>
