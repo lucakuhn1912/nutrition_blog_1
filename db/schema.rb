@@ -45,6 +45,11 @@ ActiveRecord::Schema.define(version: 2020_07_14_083228) do
     t.text "description1"
     t.text "description2"
     t.text "description3"
+    t.text "description4"
+    t.text "description5"
+    t.text "description6"
+    t.text "description7"
+    t.text "description8"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
